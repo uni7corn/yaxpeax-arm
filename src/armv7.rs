@@ -471,8 +471,8 @@ impl RegImmShift {
             let stype = self.stype();
             if stype == ShiftStyle::LSR || stype == ShiftStyle::ASR {
                 return 32;
-            } else if stype == ShiftStyle::ROR {
-                // this is actually RRX, which rotates by exactly one bit.
+            } else if stype == ShiftStyle::RRX {
+                // RRX is defined to rotate by exactly one bit.
                 return 1;
             }
         }

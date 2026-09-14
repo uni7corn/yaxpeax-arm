@@ -1,3 +1,8 @@
+## 0.6.0
+
+* the added-in-0.5.0 RRX rotate type now correctly reports rotating by one bit,
+  rather than by "0 bits"
+
 ## 0.5.0
 
 * ARMv7 instructions now impl Copy and Clone, matching A64 instructions and so
